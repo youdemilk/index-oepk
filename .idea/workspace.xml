@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf24ef81-ced7-47da-a2c8-1efc32be60c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/index-oepk.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InputList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,7 @@
       <workItem from="1672139654075" duration="1239000" />
       <workItem from="1672140899025" duration="452000" />
       <workItem from="1672141364831" duration="5010000" />
-      <workItem from="1672151553157" duration="200000" />
+      <workItem from="1672151553157" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1672141156904</created>

@@ -39,6 +39,7 @@ export const Input: FC<InputProps> = (props) => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
           "
           id="exampleFormControlInput1"
+          maxLength={9}
           placeholder={placeholder}
           disabled={disabled}
         />
