@@ -3,13 +3,14 @@ import { ChangeEventHandler, FC } from 'react';
 
 type InputProps = {
   label: string;
+  placeholder: string;
   value: number;
   onChange?: ChangeEventHandler<HTMLInputElement>
   disabled?: boolean
 }
 
 export const Input: FC<InputProps> = (props) => {
-  const { label, value, onChange, disabled } = props;
+  const { label, placeholder,  value, onChange, disabled } = props;
 
   return (
     <div className="flex justify-center">
@@ -38,7 +39,7 @@ export const Input: FC<InputProps> = (props) => {
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
           "
           id="exampleFormControlInput1"
-          placeholder={label}
+          placeholder={placeholder}
           disabled={disabled}
         />
       </div>

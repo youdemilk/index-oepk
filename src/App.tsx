@@ -6,8 +6,9 @@ import {Input} from "./components/Input";
 export type InputDataItem = {
   id: number;
   name: string;
-  value: number;
+  placeholder: string;
   setValue: Dispatch<SetStateAction<number>>
+  value: number;
 }
 
 
@@ -21,48 +22,55 @@ function App() {
   const [b, setB] = useState(0)
   const [result, setResult] = useState(0)
 
-  const data = [
+  const data: InputDataItem[] = [
     {
       id: 0,
-      name: 'x - количество подпищиков',
+      name: 'x',
+      placeholder: 'Количество подпищиков',
+      setValue: setX,
       value: x,
-      setValue: setX
     },
     {
       id: 1,
-      name: 'y - численность населения территориальной единицы\n',
+      name: 'y',
+      placeholder: 'Численность населения территориальной единицы',
+      setValue: setY,
       value: y,
-      setValue: setY
     },
     {
       id: 2,
-      name: 'w - количество просмотров записей в сообществе\n',
+      name: 'w',
+      placeholder: 'Количество просмотров записей в сообществе',
+      setValue: setW,
       value: w,
-      setValue: setW
     },
     {
       id: 3,
-      name: 'G - количество видов социальных медиа, в которых представлен государственный орган\n',
+      name: 'G',
+      placeholder: 'Количество видов социальных медиа, в которых представлен государственный орган',
+      setValue: setG,
       value: g,
-      setValue: setG
     },
     {
       id: 4,
-      name: 'H - количество комментариев\n',
+      name: 'H',
+      placeholder: 'Количество комментариев',
+      setValue: setH,
       value: h,
-      setValue: setH
     },
     {
       id: 5,
-      name: 'L - количество оценок записей сообщества\n',
+      name: 'L',
+      placeholder: 'Количество оценок записей сообщества',
+      setValue: setL,
       value: l,
-      setValue: setL
     },
     {
       id: 6,
-      name: 'B - количество публикаций в день',
+      name: 'B',
+      placeholder: 'Количество публикаций в день',
+      setValue: setB,
       value: b,
-      setValue: setB
     },
   ];
 
@@ -82,7 +90,7 @@ function App() {
           {'Рассчитать E'}
         </button>
       </div>
-      <Input label={'E'} value={result} disabled />
+      <Input label={'E'} placeholder={'E'} value={result} disabled />
     </div>
   )
 }

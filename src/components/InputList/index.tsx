@@ -12,10 +12,16 @@ export const InputList: FC<InputListProps> = (props) => {
   return (
     <div>
       {data.map((input) => {
-        const { id, name, value, setValue } = input;
+        const { id, name, placeholder, value, setValue } = input;
 
         return (
-          <Input key={id} label={name} value={value} onChange={(event) => setValue(Number(event.target.value))} />
+          <Input
+            key={id}
+            label={name}
+            onChange={(event) => setValue(Number(event.target.value))}
+            placeholder={placeholder}
+            value={value}
+          />
         )
       })}
     </div>
