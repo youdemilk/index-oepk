@@ -25,7 +25,7 @@ function App() {
     {
       id: 0,
       name: 'x',
-      placeholder: 'Количество подпищиков',
+      placeholder: 'Количество подписчиков',
       setValue: setX,
       value: x,
     },
