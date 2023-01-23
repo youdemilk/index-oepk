@@ -7,19 +7,19 @@ export type InputDataItem = {
   id: number;
   name: string;
   placeholder: string;
-  setValue: Dispatch<SetStateAction<number>>
-  value: number;
+  setValue: Dispatch<SetStateAction<any>>
+  value: any;
 }
 
 function App() {
-  const [x, setX] = useState(0)
-  const [y, setY] = useState(0)
-  const [w, setW] = useState(0)
-  const [g, setG] = useState(0)
-  const [h, setH] = useState(0)
-  const [l, setL] = useState(0)
-  const [b, setB] = useState(0)
-  const [result, setResult] = useState(0)
+  const [x, setX] = useState(undefined)
+  const [y, setY] = useState(undefined)
+  const [w, setW] = useState(undefined)
+  const [g, setG] = useState(undefined)
+  const [h, setH] = useState(undefined)
+  const [l, setL] = useState(undefined)
+  const [b, setB] = useState(undefined)
+  const [result, setResult] = useState(undefined)
 
   const data: InputDataItem[] = [
     {
@@ -74,6 +74,7 @@ function App() {
   ];
 
   const onCalculate = () => {
+    // @ts-ignore
     setResult((((((2 * x) / y) + ((100 * w) / (7 * x) + g / 3)) / 3) + (((500 * h) / x) + ((1000 * l) / x)) / 2 + (b / 3)) / 3)
   }
 

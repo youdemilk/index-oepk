@@ -18,7 +18,7 @@ export const InputList: FC<InputListProps> = (props) => {
           <Input
             key={id}
             label={name}
-            onChange={(event) => setValue(Number(event.target.value))}
+            onChange={(event) => setValue(event.target.value)}
             placeholder={placeholder}
             value={value}
           />

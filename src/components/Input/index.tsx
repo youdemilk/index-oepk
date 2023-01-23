@@ -4,7 +4,7 @@ import { ChangeEventHandler, FC } from 'react';
 type InputProps = {
   label: string;
   placeholder: string;
-  value: number;
+  value: number | undefined;
   onChange?: ChangeEventHandler<HTMLInputElement>
   disabled?: boolean
 }
@@ -19,7 +19,7 @@ export const Input: FC<InputProps> = (props) => {
           {label}
         </label>
         <input
-          value={value === 0 ? '' : value}
+          value={value}
           onChange={onChange}
           type="number"
           className="
